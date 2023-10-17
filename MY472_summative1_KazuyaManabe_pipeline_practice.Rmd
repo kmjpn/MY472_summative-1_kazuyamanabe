@@ -1,0 +1,20 @@
+---
+title: "MY472_summative1_KazuyaManabe_pipeline_practice"
+author: "Kazuya Manabe"
+date: "2023-10-17"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r airpassamgers}
+#For pipeline excersise, I will use the default dataset "AirPassangers" in R.
+
+#Simple transformation, average of AirPassangers as "mean_AirPassangers"
+
+mean_AirPassangers <- mean(AirPassengers)
+```
+
