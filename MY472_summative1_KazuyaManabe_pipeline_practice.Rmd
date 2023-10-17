@@ -13,8 +13,8 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r airpassamgers}
 #For pipeline excersise, I will use the default dataset "AirPassangers" in R.
 
-#Simple transformation, average of AirPassangers as "mean_AirPassangers"
+#Simple transformation, average of AirPassangers as "data"
 
-mean_AirPassangers <- mean(AirPassengers)
+data <- mean(AirPassengers)
 ```
 
