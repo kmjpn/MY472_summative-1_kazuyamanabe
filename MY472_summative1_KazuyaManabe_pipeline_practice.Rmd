@@ -14,13 +14,14 @@ knitr::opts_chunk$set(echo = TRUE)
 #For pipeline excersise, I will use the default dataset "nhtemp" in R.
 
 #Simple transformation function "data" which calculates an average of dataset:
+#Biologically, the temparature's impacts are sometimes quadratic. So let's calculate the mean of squared value of the same dataset too. 
 
-data <- function(x) {
-  mean_value <- mean(x)
-  return(mean_value)
+data <- function(x, y) {
+  values <- c(mean(x), mean (y^2))
+  return(values)
 }
 
 #Apply the function to nhtemp
-data(nhtemp)
+data(nhtemp,nhtemp)
 ```
 
